@@ -45,6 +45,10 @@ h1{
   color: blue;
 }
 
+h2{
+  text-decoration: underline;
+}
+
 input{
   margin-left: 20px;
   border-style: outset;
