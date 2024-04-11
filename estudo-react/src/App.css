@@ -59,3 +59,16 @@ input{
   border-color: navy;
   border-radius: 5px;
 }
+label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer {
+  font-style: italic;
+  text-decoration: underline;
+}
