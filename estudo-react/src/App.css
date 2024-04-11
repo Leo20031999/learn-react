@@ -41,6 +41,10 @@
   color: #888;
 }
 
+body{
+  background-color: grey;
+}
+
 h1{
   color: blue;
 }
