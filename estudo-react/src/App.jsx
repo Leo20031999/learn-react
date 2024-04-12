@@ -43,6 +43,7 @@ function App() {
         />
       </label>
     </div>
+    <button onClick={() => window.location.href = '/'}>Voltar para Apresentacao</button>
     <footer><br></br>Created by Leonardo</footer>
     </>
   )
