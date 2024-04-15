@@ -1,3 +1,5 @@
+import { Button } from 'primereact/button'
+import {Link} from 'react-router-dom'
 import './App.css'
  
 function informacoes() {
@@ -12,8 +14,9 @@ return (
             Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat.<br/>
             Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue.
         </p>
-
-        <button onClick={() => window.location.href = '/'}>Voltar para Apresentacao</button>
+        <Link to = "/">
+            <Button label = 'Voltar para Apresentacao'/>
+        </Link>
     </>
 )
 }

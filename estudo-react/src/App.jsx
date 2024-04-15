@@ -1,52 +1,28 @@
-import './App.css'
- 
+
+import React from 'react'
+import { PrimeReactProvider, PrimeReactContext } from 'primereact/api';
+import {BrowserRouter, Routes, Route, Link} from 'react-router-dom'
+import Login from './Login.jsx'
+import Informacoes from './Informacoes.jsx'
+import Grade from './Grade.jsx'
+import { Button } from 'primereact/button';
+
 function App() {
- 
-  return (
+
+return (
     <>
-    <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/React_Logo_SVG.svg/1024px-React_Logo_SVG.svg.png" height = "100" width = "100"></img>
-    <h1>Estudo React</h1>
-    <h2>Bem vindo ao estudo-react 1.0</h2>
-    <div>
-      <label>
-        Nome:
-        <input
-          type="text"
-          placeholder="Digite seu nome"
-        />
-      </label>
-    </div>
-    <div>
-      <label>
-        Email:
-        <input
-          type="text"
-          placeholder="Digite seu email"
-        />
-      </label>
-    </div>
-    <div>
-      <label>
-        Matricula:
-        <input
-          type="text"
-          placeholder="Digite sua matrícula"
-        />
-      </label>
-    </div>
-    <div>
-      <label>
-        Data de nascimento:
-        <input
-          type="date"
-          placeholder="Digite sua data de nascimento"
-        />
-      </label>
-    </div>
-    <button onClick={() => window.location.href = '/'}>Voltar para Apresentacao</button>
-    <footer><br></br>Created by Leonardo</footer>
+        <PrimeReactProvider>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/login" element={<Login />} />
+                <Route path="/" element={<Apresentacao />} />
+                <Route path="/informacoes" element={<Informacoes />} />
+                <Route path="/grade" element={<Grade />} />
+            </Routes>
+        </BrowserRouter>
+        </PrimeReactProvider>
     </>
-  )
+)
 }
  
 export default App
