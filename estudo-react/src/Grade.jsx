@@ -1,6 +1,9 @@
 import { InputText } from 'primereact/inputtext';
 import { InputTextarea } from 'primereact/inputtextarea';
 import { Editor } from 'primereact/editor';
+import { Link } from 'react-router-dom';
+import { Button } from 'primereact/button';
+import './Grade.css'
 
 
 function Grade(){
@@ -29,6 +32,10 @@ function Grade(){
             <label>Descrição</label>
             <Editor style={{ height: '320px' }} />
         </div>
+        <br/>
+        <Link to = "/">
+            <Button label = 'Voltar para a Apresentação'/>
+        </Link>
         </>
     )
 }
