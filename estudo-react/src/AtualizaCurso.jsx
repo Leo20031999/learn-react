@@ -1,14 +1,12 @@
 import { InputText } from 'primereact/inputtext';
-import { InputTextarea } from 'primereact/inputtextarea';
 import { Editor } from 'primereact/editor';
 import { Link } from 'react-router-dom';
 import { Button } from 'primereact/button';
-import './Grade.css'
 
-
-function Grade(){
-    return(
-        <>
+function atualizaCurso() {
+  return (
+    <>
+        <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/React_Logo_SVG.svg/1024px-React_Logo_SVG.svg.png" height = "100" width = "100"></img>
         <h1>Grade</h1>
         <div className="Campo">
             <label>Nome</label>
@@ -33,11 +31,12 @@ function Grade(){
             <Editor style={{ height: '320px' }} />
         </div>
         <br/>
+        <Button label = 'Atualizar Curso'/>
         <Link to = "/">
             <Button label = 'Voltar para a Apresentação'/>
         </Link>
         </>
-    )
+  )
 }
-
-export default Grade
+ 
+export default atualizaCurso
