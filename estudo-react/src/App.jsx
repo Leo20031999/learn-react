@@ -11,6 +11,11 @@ import ListaCurso from './ListaCurso.jsx'
 import DeletaCurso from './DeletaCurso.jsx'
 import CriaCurso from './CriaCurso.jsx'
 import AtualizaCurso from './AtualizaCurso.jsx'
+import Ano from './Ano.jsx'
+import DeclaraSeg from './DeclaSeg.jsx'
+import SelConveniosAtivos from './SelConveniosAtivos.jsx';
+import SemanaGrad from './SemanaGrad.jsx';
+import AnuarioConvenios from './w_con_anuario_convenios.jsx';
 
 function App() {
 
@@ -28,6 +33,12 @@ return (
                 <Route path="/deletaCurso" element={<DeletaCurso />} />
                 <Route path="/criaCurso" element={<CriaCurso />} />
                 <Route path="/atualizaCurso" element={<AtualizaCurso />} />
+                <Route path="/ano" element={<Ano />} />
+                <Route path="/declaSeg" element={<DeclaraSeg />} />
+                <Route path="/selConveniosAtivos" element={<SelConveniosAtivos />} />
+                <Route path="/semanaGrad" element={<SemanaGrad />} />
+                <Route path="/convenios" element={<AnuarioConvenios />} />
+                <Route path="*" element={<h1>Not Found</h1>} />
             </Routes>
         </BrowserRouter>
         </PrimeReactProvider>
